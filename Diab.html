@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>بيانات الموظف - أمانة عسير</title>
+  <link rel="stylesheet" href="lib/bootstrap5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="css/ControlStyle.css">
+</head>
+
+<body>
+
+<header class="custom-header">
+  <img src="images/amaahlogo.png" alt="شعار أمانة عسير" class="header-logo">
+  <img src="images/asir.png" alt="زخرفة أمانة عسير" class="header-pattern">
+</header>
+
+<main>
+<div class="container">
+  <div class="card">  
+    <div class="card-header form-header">
+      بيانات الموظف
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class=" col-md-6 col-xs-12">
+          <div class="form-group">
+            <label for="fullName">الاسم الرباعي</label>
+            <input type="text" id="fullName" name="fullName" class="Astext" />
+          </div>
+        </div>
+        <div class=" col-md-6 col-xs-12">
+          <div class="form-group">
+            <label for="idNumber">رقم الهوية</label>
+            <input type="text" id="idNumber" name="idNumber" class="Astext"/>
+          </div>
+        </div>
+
+        <div class=" col-md-6 col-12">
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" class="Astext"/>
+          </div>
+        </div>
+
+        <div class=" col-md-6 col-12">
+          <div class="form-group">
+            <label for="phone">رقم الجوال</label>
+            <input type="text" id="phone" name="phone" class="Astext"/>
+          </div>
+        </div>
+
+        <div class=" col-md-6 col-12">
+          <div class="form-group">
+            <label for="fileUpload">إدخال الملف</label>
+            <input class="AsAttach" type="file" id="fileUpload" />
+          </div>
+        </div>
+
+        <div class=" col-md-6 col-12">
+          <div class="form-group">
+            <label for="experience">سنوات الخبرة</label>
+            <select id="experience">
+              <option value="">اختر عدد السنوات</option>
+              <option value="1">سنة واحدة</option>
+              <option value="2">سنتان</option>
+              <option value="3">3 سنوات</option>
+              <option value="4">4 سنوات</option>
+              <option value="5">5 سنوات فأكثر</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-12">
+          <div class="form-group">
+            <div class="cone">
+
+              <label>هل أنت متأكد من بياناتك؟</label>
+              
+              <div class="hexagon">
+              
+              <label><input type="radio" name="confirm" value="yes" /> نعم</label>
+              
+              <label><input type="radio" name="confirm" value="no" /> لا</label>
+              
+              </div>
+              
+              </div>
+              
+          </div>
+        </div>
+
+        <div class="col-md-12 col-12">
+          <div class="form-group">
+            <div class="cone rhombus">
+
+              <label><input type="checkbox" /> أوافق على الشروط والأحكام</label>
+              
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-12">
+          <div class="form-group">
+            <button style="width: 200px;" type="submit">حفظ</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+  <!-- جدول الموظفين -->
+  <div class="table-container" style="direction: rtl !important;">
+    <h2 class="table-title">جدول الموظفين</h2>
+    <table id="employeeTable" class="display employee-table" style="width:100%">
+      <thead>
+        <tr>
+          <th>الاسم</th>
+          <th>العمر</th>
+          <th>الوظيفة</th>
+          <th>البلد</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>بيان آل هاشم</td>
+          <td>25</td>
+          <td>مبرمج</td>
+          <td>السعودية</td>
+        </tr>
+        <tr>
+          <td>دياب</td>
+          <td>38</td>
+          <td>مدير</td>
+          <td>السودان</td>
+        </tr>
+        <tr>
+          <td>شيماء يوسف</td>
+          <td>23</td>
+          <td>مصممة</td>
+          <td>السعودية</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</main>
+
+<footer class="footer">
+  جميع الحقوق محفوظة © أمانة منطقة عسير
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
